@@ -20,7 +20,7 @@ let preparedForLiftOff = true;
 // add logic below to verify total number of astronauts for shuttle launch does not exceed 7
 
 if (astronautCount <= 7) {
-    console.log("Astrnaut Count:" +  astronautCount);
+    console.log("Astronaut Count:" +  astronautCount);
 } else (preparedForLiftOff = false)
 
 // add logic below to verify all astronauts are ready
@@ -37,7 +37,7 @@ if (totalMassKg < maximunMassLimit) {
 
 // add logic below to verify the fuel temperature is within the appropriate range of -150 and -300
 
-if (fuelTempCelsius >= -300 || fuelTempCelsius >= -150) {
+if (fuelTempCelsius >= -300 && fuelTempCelsius <= -150) {
     console.log("Fuel Tempature is:" +  fuelTempCelsius)
 } else (preparedForLiftOff = false)
 
@@ -56,8 +56,8 @@ if (weatherStatus === "Clear"){
 // Verify shuttle launch can proceed based on above conditions
 
 if (preparedForLiftOff = true) {
-    console.log("All systems are a go! Initiating space shuttlelaunch sequence.");
-    console.log("Have a safe trip astronauts!")
+    console.log("All systems are a go! Initiating space shuttle launch sequence.");
+    console.log("Have a safe trip astronauts!");
 } else {
     console.log("This Mission is Scrapped!");
 }

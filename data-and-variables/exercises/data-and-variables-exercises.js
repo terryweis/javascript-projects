@@ -78,6 +78,6 @@ console.log(hourstoMoon, "hours to The Moon");
 
 let daystoMoon = hourstoMoon / 24;
 
-console.log(daystoMoon, "days to get to the Moon");
+console.log(daystoMoon, " Days to get to the Moon");
 
-console.log(shuttle + "will take" + daystoMoon + "days to reach the Moon");
+console.log(shuttle + "will take" + daystoMoon + " Days to reach the Moon");
