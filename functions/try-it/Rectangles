@@ -1,0 +1,65 @@
+function makeLine(size,CharacterType = "#"){
+    let line = "";
+    for (let i = 0; i < size; i++){
+    line += CharacterType;
+}
+    return line
+}
+
+function makeSquare(size){
+    return makeRectangle(size,size);
+}
+
+
+
+
+function makeRectangle(width, height){
+    let rectangle = "";
+    for (let i = 0; i < height; i++){
+        rectangle += (makeLine(width) + `\n`); 
+    }
+    return rectangle.slice(0,-1);
+}
+
+function makeDownwardStairs(height){
+    let stairs = ""
+    for (let i = 0; i < height; i ++){
+        stairs += (makeLine(i+1) + `\n`);
+    }
+    return stairs.slice(0,-1);
+}
+
+function makeSpaceLine(numSpaces,numChars){
+    let spacedLine = makeLine(numSpaces);
+    let chars = makeLine(numChars);
+    for (let i = 0; i < numSpaces; i++){
+        spacedLine += " "; 
+        let chars = makeLine(numChars)
+
+    }
+    return `${spacedLine}${chars}${spacedLine}`;
+}
+
+function makeIsoscelesTriangle(height){
+    let triangle = "";
+    for (let i = 0; i < height; i++){
+        triangle += `${makeSpaceLine(height - i - 1, 2 * i +1)}\n`;
+    }
+    return triangle;
+}
+
+function makeDiamond(height){
+    let topOfDiamond = makeIsoscelesTriangle(height);
+    let bottomOfDiamond =  reverse(topOfDiamond);   
+    return `${topOfDiamond}\n${bottomOfDiamond}`;
+}
+
+function reverse(str) {
+    let reversed = '';
+
+    for (let i = 0; i < str.length; i++) {
+        reversed = str[i] + reversed;
+    }
+
+    return reversed;
+}

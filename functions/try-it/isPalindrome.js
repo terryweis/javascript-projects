@@ -1,3 +1,4 @@
+let str = ['block rock sock']
 function reverse(str) {
    return str.split('').reverse().join('');
 }
