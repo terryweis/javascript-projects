@@ -1,0 +1,82 @@
+let superChimpOne = {
+    name: "Chad",
+    species: "Chimpanzee",
+    mass: 9,
+    age: 6,
+    astronautID: 5,
+    move: function (){
+       return Math.round(Math.random()*10);
+    }
+ };
+ 
+ let salamander = {
+    name: "Lacey",
+    species: "Axolotl Salamander",
+    mass: 0.1,
+    age: 5,
+    astronautID: 8,
+    move: function(){
+        return Math.round(Math.random()*10);
+     }
+ };
+ 
+ let superChimpTwo = {
+   name: "Brad",
+   species: "Chimpanzee",
+   mass: 11,
+   age: 6,
+   astronautID: 7,
+   move: function(){
+    return Math.round(Math.random()*10);
+ }
+ }
+
+ let dog = {
+   name: "Leroy",
+   species: "Beagle",
+   mass: 14,
+   age: 5,
+   astronautID: 2,
+   move: function(){
+    return Math.round(Math.random()*10);
+ }
+ }
+
+ let tardigrade = {
+   name: "Almina",
+   species: "Tardigrade",
+   mass: 0.0000000001,
+   age: 1,
+   astronautID: 9,
+   move: function(){
+    return Math.round(Math.random()*10);
+ }
+ }
+ 
+ // After you have created the other object literals, add the astronautID property to each one.
+ 
+let crew = [superChimpOne,dog, salamander, superChimpTwo, tardigrade]
+
+ // Create an array to hold the animal objects.
+ 
+function crewReports(object){
+  
+    return console.log(`${object.name} is a ${object.species}. They are ${object.age} years old and ${object.mass} kilograms. Their id is ${object.astronautID}.`)
+}
+// console.log(crewReports(superChimpOne));
+
+ // Print out the relevant information about each animal.
+ 
+
+// Start an animal race!
+
+function contestants(arr){
+   for (i = 0; i < arr.length; i++)
+   
+}
+
+console.log(Math.round(Math.random()*10));
+
+
+
+    
