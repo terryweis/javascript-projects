@@ -1,0 +1,2 @@
+const whowon = require('../RPS');
+
