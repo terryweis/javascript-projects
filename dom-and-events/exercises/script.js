@@ -1,4 +1,4 @@
-function init () {
+window.addEventListener("load",function() {
     const missionAbort = document.getElementById("abortMission");
     const button = document.getElementById("liftoffButton");
     const paragraph = document.getElementById("statusReport");
@@ -22,6 +22,4 @@ function init () {
        }
     })
     
-}
-
-window.addEventListener("load", init);
+})
